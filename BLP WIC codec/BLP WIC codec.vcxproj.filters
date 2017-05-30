@@ -28,7 +28,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="IMPORTANT.txt" />
-    <Text Include="README" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

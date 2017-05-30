@@ -240,7 +240,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="IMPORTANT.txt" />
-    <Text Include="README" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\squish-1.11\alpha.h" />
