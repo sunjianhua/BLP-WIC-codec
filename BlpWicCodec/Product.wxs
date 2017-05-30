@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="BlpWicCodec" Language="1033" Version="1.0.0.0" Manufacturer="MySociety, Inc." UpgradeCode="923f5330-8417-4ba0-ba6d-1827bb2cf4eb">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+
+    
+		<Feature Id="CodecFeature" Title="WIC blp codec" Level="1" Display="expand" AllowAdvertise="no">
+			<ComponentGroupRef Id="ProductComponents" />
+
+      <Feature Id="FileAssociationFeature" Title="File type association" Level="1" AllowAdvertise="no">
+
+      </Feature>
+		</Feature>
+
+    
+    <UI>
+      <UIRef Id="WixUI_FeatureTree" />
+    </UI>
+    
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="BlpWicCodec" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="BlpWicCodecDll" Guid="61FE2533-54E2-4B68-BC4C-C1AB91C8BEDE">
+        <File Id="BlpWicCodecDll" Source="$(var.BLP WIC codec.TargetPath)" KeyPath="yes" Checksum="yes"/>
+      </Component>
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<!-- <Component Id="ProductComponent"> -->
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			<!-- </Component> -->
+		</ComponentGroup>
+	</Fragment>
+</Wix>

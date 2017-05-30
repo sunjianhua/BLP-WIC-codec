@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Decoder">
+      <UniqueIdentifier>{ede3f208-ded9-4eea-a299-9a79ce5ab840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="squish">
+      <UniqueIdentifier>{6e3ddf77-bf25-4594-8685-2f9f1e25095e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="squish\src">
+      <UniqueIdentifier>{ad4d9416-b01b-4837-9002-71555cc9879d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="squish\hdr">
+      <UniqueIdentifier>{93a98b37-39dd-41cd-a557-da6daa634d4b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="IMPORTANT.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BLPFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\alpha.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\clusterfit.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\colourblock.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\colourfit.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\colourset.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\config.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\maths.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\rangefit.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\simd.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\simd_float.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\simd_sse.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\simd_ve.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\singlecolourfit.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\squish-1.11\squish.h">
+      <Filter>squish\hdr</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CWICBlpDecoder.h">
+      <Filter>Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="CWICBlpFrameDecoder.h">
+      <Filter>Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="CWICBlpMetadataReader.h">
+      <Filter>Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="CWICBlpMetadataEnumerator.h">
+      <Filter>Decoder</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BLP WIC codec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWICBlpDecoder.cpp">
+      <Filter>Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="CWICBlpFrameDecoder.cpp">
+      <Filter>Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\squish-1.11\squish.cpp">
+      <Filter>squish\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\squish-1.11\alpha.cpp">
+      <Filter>squish\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\squish-1.11\clusterfit.cpp">
+      <Filter>squish\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\squish-1.11\colourblock.cpp">
+      <Filter>squish\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\squish-1.11\colourfit.cpp">
+      <Filter>squish\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\squish-1.11\colourset.cpp">
+      <Filter>squish\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\squish-1.11\maths.cpp">
+      <Filter>squish\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\squish-1.11\rangefit.cpp">
+      <Filter>squish\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\squish-1.11\singlecolourfit.cpp">
+      <Filter>squish\src</Filter>
+    </ClCompile>
+    <ClCompile Include="codec guids.cpp">
+      <Filter>Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="CWICBlpMetadataReader.cpp">
+      <Filter>Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="CWICBlpMetadataEnumerator.cpp">
+      <Filter>Decoder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BLP WIC codec.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BLP WIC codec.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="WICBlpDecoder.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="WICBlpFrameDecoder.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="BLP WIC codec.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="BLPFileType.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="WICBlpMetadataReader.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon\v2\Untitled-1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

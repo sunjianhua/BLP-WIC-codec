@@ -1,0 +1,53 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		NoRemove {7ED96837-96F0-4812-B211-F13C24117ED3}
+		{
+			NoRemove Instance
+			{
+				ForceRemove {9F6C2DAB-CF43-4CFA-B1D4-51B35287BEB3}
+				{
+					val CLSID = s '{9F6C2DAB-CF43-4CFA-B1D4-51B35287BEB3}'
+					val FriendlyName = s 'Blizzard BLP Codec'
+				}
+			}
+		}
+		ForceRemove {9F6C2DAB-CF43-4CFA-B1D4-51B35287BEB3}
+        {
+			val Version = s '1.0.0.0'
+			val SpecVersion = s '1.0.0.0'
+			val ColorManagementVersion = s '1.0.0.0'
+			val SupportAnimation = d '0'
+			val SupportChromaKey = d '0'
+			val SupportLossless = d '1'
+			val SupportMultiframe = d '0'
+			val ArbitrationPriority = d '10'
+			val Author = s 'Blizzard Entertainment'
+			val FriendlyName = s 'Blizzard BLP Codec'
+			val Description = s 'Blizzard BLP Decoder'
+			val FileExtensions = s '.blp'
+			val Vendor = s '{32A655DF-FAC8-4F57-9F2E-A42FA88E0373}'
+			val ContainerFormat = s '{707487DA-7D04-4982-9812-47AA3F65BF74}'
+			val MimeTypes = s 'image/blp'
+			Formats
+			{
+				{F5C7AD2D-6A8D-43DD-A7A8-A29935261AE9}
+			}
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			Patterns
+			{
+				0
+				{
+					val Position = d '0'
+					val Length = d '4'
+					val Pattern = b '424C5032'
+					val Mask = b 'FFFFFFFF'
+				}
+			}
+		}
+	}
+}

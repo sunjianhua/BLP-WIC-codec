@@ -1,0 +1,7 @@
+in BLPFileType.rgs, blpfile\shell\open\command default value must be REG_EXPAND_SZ which is not possible with rgs files.
+
+WICBlpDecoder.rgs
+
+Formats are GUID of supported pixel formats
+
+On an i7 squish is faster than DX11 (like 2 times faster)

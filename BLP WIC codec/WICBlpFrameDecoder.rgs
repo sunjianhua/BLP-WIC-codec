@@ -1,0 +1,14 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {3843B368-937A-4B77-B328-1C868A163495} = s 'WICBlpFrameDecoder Class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			Version = s '1.0'
+		}
+	}
+}

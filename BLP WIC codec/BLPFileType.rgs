@@ -1,0 +1,33 @@
+HKCR
+{
+	'.blp' = s 'blpfile'
+	{
+		val 'Content Type' = s 'image/blp'
+		val 'PerceivedType' = s 'image'
+		
+		OpenWithList
+		{
+			ehshell.exe
+			{
+			}
+		}
+		OpenWithProgids
+		{
+		}
+	}
+	blpfile
+	{
+		DefaultIcon = s '%MODULE%, 104'
+		{
+		}
+		shell
+		{
+			open
+			{
+				command = s '%SystemRoot%\System32\rundll32.exe "%ProgramFiles%\Windows Photo Viewer\PhotoViewer.dll", ImageView_Fullscreen %1'
+				{
+				}
+			}
+		}
+	}
+}
